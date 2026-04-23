@@ -6,6 +6,11 @@ import Providers from "./providers";
 const apercu = localFont({
   src: [
     {
+      path: "../fonts/apercu_light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
       path: "../fonts/apercu_regular_pro.otf",
       weight: "400",
       style: "normal",

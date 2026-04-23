@@ -12,24 +12,25 @@ export default function ThemeToggle() {
   };
 
   return (
-    <button
-      onClick={toggle}
-      aria-label="Toggle theme"
-      className="flex items-center select-none"
-    >
+    <div className="absolute top-6 right-6 z-50 flex items-center">
       <SunIcon className="w-4.5 text-primary" />
-      <span
-        className={`relative mx-3 h-6 w-11 rounded-full transition-colors duration-300 ${
-          isDark ? "bg-toggle-on" : "bg-toggle-off"
-        }`}
+      <button
+        onClick={toggle}
+        aria-label="Toggle theme"
+        className="relative mx-3 h-6 w-11 rounded-full transition-colors duration-300 cursor-pointer focus:outline-none"
       >
+        <span
+          className={`absolute inset-0 rounded-full ${
+            isDark ? "bg-toggle-on" : "bg-toggle-off"
+          }`}
+        />
         <span
           className={`absolute top-1 left-1 h-4 w-4 rounded-full bg-white shadow transition-transform duration-300 ${
             isDark ? "translate-x-5" : "translate-x-0"
           }`}
         />
-      </span>
+      </button>
       <MoonIcon className="w-4.5 text-primary" />
-    </button>
+    </div>
   );
 }

@@ -24,7 +24,6 @@
 @theme inline {
   --color-background: var(--color-bg);
   --color-foreground: var(--color-text-primary);
-
   --color-primary: var(--color-text-primary);
   --color-accent: var(--color-text-accent);
   --color-underline: var(--color-underline);
@@ -41,5 +40,9 @@ body {
 
 ::selection {
   background: var(--color-selection);
-  color: #000;
+  color: var(--color-text-primary);
+}
+
+.dark ::selection {
+  color: #444452;
 }
