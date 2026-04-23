@@ -22,23 +22,28 @@ export default function ScrollToTop() {
   return (
     <motion.button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      initial={{ opacity: 0, y: 20 }}
-      animate={show ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.25 }}
+      initial={{ opacity: 0 }}
+      animate={show ? { opacity: 1 } : { opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      style={{ pointerEvents: show ? "auto" : "none" }}
       className="
         fixed bottom-6 right-6
         w-10 h-10
         rounded-full
         border border-(--color-foreground)/20
         bg-background/70
-        backdrop-blur
+        backdrop-blur-sm
         flex items-center justify-center
         text-lg
         text-(--color-foreground)
         transition
+        hover:scale-105
         z-50
-        cursor-pointer
-        "
+        will-change-transform
+        transform-gpu
+        touch-manipulation
+        cursor-default md:cursor-pointer
+      "
     >
       ☝
     </motion.button>
