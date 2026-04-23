@@ -30,7 +30,10 @@ const underline = {
 
 export default function Background() {
   return (
-    <section className="px-6 sm:px-10 md:px-20 lg:px-25 py-16 sm:py-20 md:py-28">
+    <section
+      id="background"
+      className="px-6 sm:px-10 md:px-20 lg:px-25 py-16 sm:py-20 md:py-28"
+    >
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[140px_1fr] lg:grid-cols-[180px_1fr] gap-10 md:gap-14 lg:gap-20">
         <motion.h1
           variants={item}
@@ -120,7 +123,7 @@ export default function Background() {
               />
               <span className="relative">Putera Batam University</span>
             </motion.a>
-            , and later completed a fullstack JavaScript bootcamp at Fazztrack
+            , and later completed a Fullstack JavaScript Bootcamp at Fazztrack
             (now rebranded as{" "}
             <motion.a
               href="https://www.kodacademy.id/"
