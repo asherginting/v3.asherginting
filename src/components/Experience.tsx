@@ -1,0 +1,157 @@
+"use client";
+
+import { motion } from "framer-motion";
+import experiences from "@/data/experience.json";
+
+type Role = {
+  title: string;
+  period: string;
+  location: string;
+};
+
+type Experience = {
+  company: string;
+  roles: Role[];
+};
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.45,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
+
+export default function Experience() {
+  return (
+    <section
+      id="experience"
+      className="
+        px-6 sm:px-10 md:px-20 lg:px-25
+        py-16 sm:py-20 md:py-28
+      "
+    >
+      <div
+        className="
+          max-w-5xl mx-auto
+          grid grid-cols-1
+          md:grid-cols-[140px_1fr] lg:grid-cols-[180px_1fr]
+          gap-10 md:gap-14 lg:gap-20
+        "
+      >
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className="
+            text-sm sm:text-base
+            font-bold text-accent
+            tracking-[0.2em]
+            text-center
+          "
+        >
+          EXPERIENCE
+        </motion.h1>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="flex flex-col gap-10 md:gap-12"
+        >
+          {(experiences as Experience[]).map((exp) => (
+            <motion.div key={exp.company} variants={item}>
+              <h3
+                className="
+                  text-sm md:text-base
+                  font-semibold
+                  text-(--color-foreground)
+                  mb-2
+                "
+              >
+                {exp.company}
+              </h3>
+              <div className="flex flex-col gap-5">
+                {exp.roles.map((role, i) => (
+                  <div
+                    key={i}
+                    className="
+                      flex flex-col sm:flex-row
+                      sm:justify-between
+                      sm:items-center
+                      gap-1 sm:gap-6
+                    "
+                  >
+                    <div>
+                      <p className="text-xs sm:text-sm text-(--color-foreground)">
+                        {role.title}
+                      </p>
+
+                      <p className="text-xs text-(--color-foreground)/70 mt-1">
+                        {role.location}
+                      </p>
+                    </div>
+                    <div
+                      className="
+                        text-xs sm:text-sm
+                        text-(--color-foreground)/70
+                        whitespace-nowrap
+                      "
+                    >
+                      {role.period}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+          <motion.div variants={item} className="pt-2">
+            <motion.a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex items-center gap-2
+                text-base
+                font-bold
+                text-(--color-foreground)
+              "
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+            >
+              <span>View Resume</span>
+              <motion.span
+                variants={{
+                  rest: { x: 0, scale: 1 },
+                  hover: { x: 6, scale: 1.1 },
+                }}
+                transition={{
+                  duration: 0.25,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="text-accent inline-block"
+              >
+                →
+              </motion.span>
+            </motion.a>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}

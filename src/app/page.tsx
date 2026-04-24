@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Background from "@/components/Background";
 import ScrollToTop from "@/components/ScrollToTop";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Background />
         <Skills />
+        <Experience />
       </main>
       <ScrollToTop />
     </div>

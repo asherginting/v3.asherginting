@@ -86,7 +86,7 @@ export default function Skills() {
                     key={it}
                     className="
                       text-xs sm:text-sm
-                      // text-(--color-foreground)/70
+                      text-(--color-foreground)/70
                       leading-relaxed
                     "
                   >

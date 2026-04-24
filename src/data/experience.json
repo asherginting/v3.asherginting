@@ -1,0 +1,37 @@
+[
+  {
+    "company": "Bank Sinarmas",
+    "roles": [
+      {
+        "title": "Frontend Engineer",
+        "period": "Nov 2024 — Apr 2026",
+        "location": "Jakarta, Indonesia"
+      }
+    ]
+  },
+  {
+    "company": "Xcidic",
+    "roles": [
+      {
+        "title": "Mobile & Web Engineer",
+        "period": "Jun 2023 — Nov 2024",
+        "location": "Singapore (Remote)"
+      }
+    ]
+  },
+  {
+    "company": "Refactory",
+    "roles": [
+      {
+        "title": "Junior Software Engineer",
+        "period": "Nov 2022 — Jun 2023",
+        "location": "Yogyakarta, Indonesia"
+      },
+      {
+        "title": "Software Engineer (Intern)",
+        "period": "Jun 2022 — Nov 2022",
+        "location": "Yogyakarta, Indonesia"
+      }
+    ]
+  }
+]
