@@ -90,17 +90,14 @@ export default function Experience() {
                   <div
                     key={i}
                     className="
-                      flex flex-col sm:flex-row
-                      sm:justify-between
-                      sm:items-center
-                      gap-1 sm:gap-6
+                      flex flex-row justify-between items-start
+                      gap-4
                     "
                   >
-                    <div>
+                    <div className="max-w-[70%]">
                       <p className="text-xs sm:text-sm text-(--color-foreground)">
                         {role.title}
                       </p>
-
                       <p className="text-xs text-(--color-foreground)/70 mt-1">
                         {role.location}
                       </p>
@@ -110,6 +107,7 @@ export default function Experience() {
                         text-xs sm:text-sm
                         text-(--color-foreground)/70
                         whitespace-nowrap
+                        text-right
                       "
                     >
                       {role.period}
