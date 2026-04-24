@@ -32,7 +32,7 @@ export default function Background() {
   return (
     <section
       id="background"
-      className="px-6 sm:px-10 md:px-20 lg:px-25 py-16 sm:py-20 md:py-28"
+      className="px-6 sm:px-10 md:px-20 lg:px-25 py-16 sm:py-20 md:py-25"
     >
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[140px_1fr] lg:grid-cols-[180px_1fr] gap-10 md:gap-14 lg:gap-20">
         <motion.h1
@@ -40,7 +40,7 @@ export default function Background() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-sm sm:text-base font-bold text-accent tracking-[0.2em] text-center md:text-left"
+          className="text-sm sm:text-base font-bold text-accent tracking-[0.2em] text-center"
         >
           BACKGROUND
         </motion.h1>

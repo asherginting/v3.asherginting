@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Frontend",
+    "items": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Tailwind CSS",
+      "HTML & CSS"
+    ]
+  },
+  {
+    "title": "State Management",
+    "items": ["Redux", "Zustand", "Context API"]
+  },
+  {
+    "title": "Data Fetching",
+    "items": ["TanStack Query (React Query)", "REST API Integration", "GraphQL"]
+  },
+  {
+    "title": "Backend",
+    "items": ["Node.js", "Express.js", "API Design"]
+  },
+  {
+    "title": "Database",
+    "items": ["PostgreSQL", "MongoDB", "Supabase", "Prisma"]
+  },
+  {
+    "title": "Mobile",
+    "items": ["React Native", "Mobile UI Development"]
+  },
+  {
+    "title": "DevOps & Tools",
+    "items": ["Git & GitHub", "Docker", "Postman", "Chrome DevTools"]
+  },
+  {
+    "title": "UI Implementation",
+    "items": [
+      "Figma (Design-to-Code)",
+      "Responsive Layout",
+      "Pixel-perfect Implementation",
+      "Cross-device UI Consistency"
+    ]
+  }
+]
