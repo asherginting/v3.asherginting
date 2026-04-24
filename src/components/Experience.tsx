@@ -11,6 +11,7 @@ type Role = {
 
 type Experience = {
   company: string;
+  url?: string;
   roles: Role[];
 };
 
@@ -75,16 +76,52 @@ export default function Experience() {
         >
           {(experiences as Experience[]).map((exp) => (
             <motion.div key={exp.company} variants={item}>
-              <h3
-                className="
-                  text-sm md:text-base
-                  font-semibold
-                  text-(--color-foreground)
-                  mb-2
-                "
-              >
-                {exp.company}
-              </h3>
+              {exp.url ? (
+                <motion.a
+                  href={exp.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    relative inline-block
+                    text-sm md:text-base
+                    font-semibold
+                    text-(--color-foreground)
+                    mb-2
+                  "
+                  initial="rest"
+                  whileHover="hover"
+                  animate="rest"
+                >
+                  {exp.company}
+                  <motion.span
+                    variants={{
+                      rest: { scaleX: 0 },
+                      hover: { scaleX: 1 },
+                    }}
+                    transition={{
+                      duration: 0.25,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="
+                      absolute left-0 -bottom-1
+                      h-px w-full
+                      bg-current
+                      origin-left
+                    "
+                  />
+                </motion.a>
+              ) : (
+                <h3
+                  className="
+                    text-sm md:text-base
+                    font-semibold
+                    text-(--color-foreground)
+                    mb-2
+                  "
+                >
+                  {exp.company}
+                </h3>
+              )}
               <div className="flex flex-col gap-5">
                 {exp.roles.map((role, i) => (
                   <div

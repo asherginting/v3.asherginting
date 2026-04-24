@@ -1,6 +1,7 @@
 [
   {
     "company": "Bank Sinarmas",
+    "url": "https://www.banksinarmas.com/id/personal&lang=en",
     "roles": [
       {
         "title": "Frontend Engineer",
@@ -11,6 +12,7 @@
   },
   {
     "company": "Xcidic",
+    "url": "https://xcidic.com",
     "roles": [
       {
         "title": "Mobile & Web Engineer",
@@ -21,6 +23,7 @@
   },
   {
     "company": "Refactory",
+    "url": "https://refactory.id",
     "roles": [
       {
         "title": "Junior Software Engineer",
