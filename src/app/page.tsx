@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Experience />
         <Projects />
       </main>
+      <Footer />
       <ScrollToTop />
     </div>
   );
