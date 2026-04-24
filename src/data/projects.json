@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Personal Portfolio",
+    "description": "A modern personal portfolio website designed to showcase my projects, experience, and technical skills in a clean and accessible way.",
+    "problem": "Built to present my work clearly to global recruiters, with a strong focus on performance, responsiveness, and user experience.",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "image": "/projects/1.png",
+    "live": "https://v3-asherginting.vercel.app",
+    "repo": "https://github.com/asherginting/v3.asherginting",
+    "note": "📌 NOTE: Built independently, inspired by Brittany Chiang’s portfolio."
+  }
+]
