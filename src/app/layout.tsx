@@ -30,7 +30,7 @@ const apercu = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio",
+  title: "Personal Portfolio - AAG",
   description: "Personal Portfolio by Asher Azriel Ginting",
 };
 

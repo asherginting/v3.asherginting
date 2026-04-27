@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div>
       <ThemeToggle />
+      <Hero />
       <main>
-        <Hero />
         <Background />
         <Skills />
         <Experience />
