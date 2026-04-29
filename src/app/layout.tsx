@@ -30,7 +30,7 @@ const apercu = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.asherginting.dev"),
+  metadataBase: new URL("https://asherginting.dev"),
   title: {
     default: "Asher Azriel Ginting - Software Engineer",
     template: "%s | Asher Ginting",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   creator: "Asher Azriel Ginting",
   applicationName: "Personal Website Portfolio",
   alternates: {
-    canonical: "https://www.asherginting.dev",
+    canonical: "https://asherginting.dev",
   },
   icons: {
     icon: "/favicon.ico",
@@ -57,11 +57,11 @@ export const metadata: Metadata = {
     title: "Asher Azriel Ginting",
     description:
       "software engineer building scalable web & mobile applications.",
-    url: "https://www.asherginting.dev",
+    url: "https://asherginting.dev",
     siteName: "Personal Website Portfolio",
     images: [
       {
-        url: "https://www.asherginting.dev/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
       },
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Asher Azriel Ginting",
     description: "software engineer building scalable products.",
-    images: ["https://www.asherginting.dev/og-image.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -96,7 +96,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Asher Azriel Ginting",
-              url: "https://www.asherginting.dev",
+              url: "https://asherginting.dev",
               sameAs: [
                 "https://github.com/asherginting",
                 "https://www.linkedin.com/in/asherginting",
