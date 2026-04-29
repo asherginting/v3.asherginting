@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Asher Azriel Ginting" }],
   creator: "Asher Azriel Ginting",
-  applicationName: "Asher Ginting Portfolio",
+  applicationName: "Personal Website Portfolio",
   alternates: {
     canonical: "https://www.asherginting.dev",
   },
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Asher Azriel Ginting",
     description:
-      "Software engineer building scalable web & mobile applications.",
+      "software engineer building scalable web & mobile applications.",
     url: "https://www.asherginting.dev",
-    siteName: "Asher Ginting Portfolio",
+    siteName: "Personal Website Portfolio",
     images: [
       {
         url: "https://www.asherginting.dev/og-image.png",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Asher Azriel Ginting",
-    description: "Software engineer building scalable products.",
+    description: "software engineer building scalable products.",
     images: ["https://www.asherginting.dev/og-image.png"],
   },
   robots: {
@@ -103,7 +103,7 @@ export default function RootLayout({
               ],
               jobTitle: "Software Engineer",
               description:
-                "Software engineer focused on scalable web and mobile applications.",
+                "software engineer focused on scalable web and mobile applications.",
             }),
           }}
         />
