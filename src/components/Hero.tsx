@@ -27,7 +27,7 @@ export default function Hero() {
           👋
         </motion.span>
       </p>
-      <p
+      <h1
         className="
           my-4 sm:my-5 md:my-6
           max-w-md sm:max-w-xl md:max-w-180
@@ -41,7 +41,7 @@ export default function Hero() {
         <span className="select-none pointer-events-none" aria-hidden="true">
           👨‍💻
         </span>
-      </p>
+      </h1>
       <div className="my-4 sm:my-5 text-base sm:text-lg md:text-[20px] font-normal flex items-center gap-1.5">
         <span>Get in touch</span>
         <span className="select-none pointer-events-none" aria-hidden="true">
