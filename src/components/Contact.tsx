@@ -78,7 +78,7 @@ export default function Contact() {
               "
             >
               <Image
-                src="/profile.png"
+                src="/profile.jpg"
                 alt="Asher Azriel Ginting"
                 fill
                 sizes="100px"
@@ -136,6 +136,7 @@ function ContactButton({ label, href, external, icon }: ContactLink) {
       rel={external ? "noopener noreferrer" : undefined}
       initial="rest"
       whileHover="hover"
+      whileTap="hover"
       animate="rest"
       className="
         relative overflow-hidden

@@ -90,6 +90,7 @@ export default function Experience() {
                   "
                   initial="rest"
                   whileHover="hover"
+                  whileTap="hover"
                   animate="rest"
                 >
                   {exp.company}
@@ -167,6 +168,7 @@ export default function Experience() {
               "
               initial="rest"
               whileHover="hover"
+              whileTap="hover"
               animate="rest"
             >
               <span>View Resume</span>

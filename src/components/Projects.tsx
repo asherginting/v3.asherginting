@@ -176,6 +176,7 @@ export default function Projects() {
                         className="relative inline-block font-semibold text-(--color-foreground)"
                         initial="rest"
                         whileHover="hover"
+                        whileTap="hover"
                         animate="rest"
                       >
                         Live

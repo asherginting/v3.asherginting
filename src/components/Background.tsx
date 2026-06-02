@@ -61,6 +61,7 @@ export default function Background() {
               className="relative inline-block font-bold"
               initial="rest"
               whileHover="hover"
+              whileTap="hover"
               animate="rest"
             >
               <motion.span
@@ -87,6 +88,7 @@ export default function Background() {
               className="relative inline-block font-bold"
               initial="rest"
               whileHover="hover"
+              whileTap="hover"
               animate="rest"
             >
               <motion.span
@@ -111,6 +113,7 @@ export default function Background() {
               className="relative inline-block font-bold"
               initial="rest"
               whileHover="hover"
+              whileTap="hover"
               animate="rest"
             >
               <motion.span
@@ -132,6 +135,7 @@ export default function Background() {
               className="relative inline-block font-bold"
               initial="rest"
               whileHover="hover"
+              whileTap="hover"
               animate="rest"
             >
               <motion.span

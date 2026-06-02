@@ -7,7 +7,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col md:flex-row justify-between items-center md:items-center text-center md:text-left gap-7 md:gap-6 pt-12 md:pt-20 pb-12 px-6 sm:px-10 md:px-25">
+    <footer className="flex flex-col-reverse md:flex-row justify-between items-center md:items-center text-center md:text-left gap-7 md:gap-6 pt-12 md:pt-20 pb-12 px-6 sm:px-10 md:px-25">
       <div className="text-[13px] md:text-[14px] font-bold text-(--color-foreground) leading-normal">
         Built by AAG
         <br />© {year}
@@ -28,6 +28,7 @@ export default function Footer() {
             "
             initial="rest"
             whileHover="hover"
+            whileTap="hover"
             animate="rest"
           >
             {s.label}

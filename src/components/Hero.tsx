@@ -52,6 +52,7 @@ export default function Hero() {
           className="relative inline-block px-2"
           initial="rest"
           whileHover="hover"
+          whileTap="hover"
           animate="rest"
         >
           <motion.span
