@@ -33,12 +33,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://asherginting.dev"),
   title: {
     default: "Asher Azriel Ginting - Software Engineer",
-    template: "%s | Asher Ginting",
+    template: "%s | Asher Azriel Ginting",
   },
   description:
     "Asher Azriel Ginting is a software engineer specializing in scalable web and mobile applications, performance, and clean user experiences.",
   keywords: [
-    "Asher Ginting",
     "Asher Azriel Ginting",
     "Software Engineer Indonesia",
     "Frontend Engineer",

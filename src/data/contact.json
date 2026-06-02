@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Email",
+    "href": "mailto:asherginting3@gmail.com",
+    "external": false,
+    "icon": "email"
+  },
+  {
+    "label": "WhatsApp",
+    "href": "https://wa.me/6285207907976",
+    "external": true,
+    "icon": "whatsapp"
+  },
+  {
+    "label": "LinkedIn",
+    "href": "https://linkedin.com/in/asherginting",
+    "external": true,
+    "icon": "linkedin"
+  },
+  {
+    "label": "GitHub",
+    "href": "https://github.com/asherginting",
+    "external": true,
+    "icon": "github"
+  },
+  {
+    "label": "Resume",
+    "href": "/resume.pdf",
+    "external": true,
+    "icon": "document"
+  },
+  {
+    "label": "Projects",
+    "href": "/#projects",
+    "external": true,
+    "icon": "code"
+  }
+]

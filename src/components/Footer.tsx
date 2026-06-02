@@ -9,9 +9,8 @@ export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row justify-between items-center md:items-center text-center md:text-left gap-7 md:gap-6 pt-12 md:pt-20 pb-12 px-6 sm:px-10 md:px-25">
       <div className="text-[13px] md:text-[14px] font-bold text-(--color-foreground) leading-normal">
-        Developed by 👨‍💻
-        <br />
-        {footer.author} 👉 {year}
+        Built by AAG
+        <br />© {year}
       </div>
       <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-7">
         {footer.social.map((s) => (
