@@ -6,22 +6,10 @@
     "icon": "email"
   },
   {
-    "label": "WhatsApp",
-    "href": "https://wa.me/6285207907976",
-    "external": true,
-    "icon": "whatsapp"
-  },
-  {
     "label": "LinkedIn",
     "href": "https://linkedin.com/in/asherginting",
     "external": true,
     "icon": "linkedin"
-  },
-  {
-    "label": "GitHub",
-    "href": "https://github.com/asherginting",
-    "external": true,
-    "icon": "github"
   },
   {
     "label": "Resume",
@@ -30,9 +18,21 @@
     "icon": "document"
   },
   {
+    "label": "GitHub",
+    "href": "https://github.com/asherginting",
+    "external": true,
+    "icon": "github"
+  },
+  {
     "label": "Projects",
     "href": "/#projects",
     "external": true,
     "icon": "code"
+  },
+  {
+    "label": "WhatsApp",
+    "href": "https://wa.me/6285207907976",
+    "external": true,
+    "icon": "whatsapp"
   }
 ]

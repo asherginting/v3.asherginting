@@ -92,7 +92,7 @@ export default function Contact() {
               Asher Azriel Ginting
             </h1>
             <p className="text-sm text-(--color-foreground)/70 font-light">
-              Software Engineer
+              Open to Opportunities and Collaborations
             </p>
           </motion.div>
           <motion.h2
@@ -105,7 +105,7 @@ export default function Contact() {
               mb-6
             "
           >
-            LET&apos;S CONNECT
+            GET IN TOUCH
           </motion.h2>
           <div className="flex flex-col gap-3">
             {(CONTACT as ContactLink[]).map((link) => (
@@ -117,7 +117,7 @@ export default function Contact() {
           <motion.p
             variants={item}
             className="
-              mt-6 text-[13px] md:text-[14px] font-bold text-(--color-foreground) leading-normal text-center
+              mt-6 text-[12px] md:text-[12px] font-bold text-(--color-foreground) leading-normal text-center
             "
           >
             Built by AAG
