@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import profileImg from "../../public/profile.jpg";
 import { motion } from "framer-motion";
 import ThemeToggle from "@/components/ThemeToggle";
 import CONTACT from "@/data/contact.json";
@@ -78,11 +79,12 @@ export default function Contact() {
               "
             >
               <Image
-                src="/profile.jpg"
+                src={profileImg}
                 alt="Asher Azriel Ginting"
                 fill
                 sizes="100px"
                 priority
+                placeholder="blur"
                 className="object-cover"
               />
             </div>
