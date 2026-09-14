@@ -33,8 +33,6 @@
 * **Website**: https://asherginting.dev
 * **Repository**: https://github.com/asherginting/v3.asherginting
 
-> Open to remote opportunities — available for global collaboration.
-
 ---
 
 ## ✨ Features
