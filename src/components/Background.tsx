@@ -154,9 +154,8 @@ export default function Background() {
             I’m particularly interested in building systems that feel simple on
             the surface but are well-structured underneath, with a strong focus
             on performance, clarity, and long-term maintainability. Currently,{" "}
-            <span className="font-bold">I’m open to remote opportunities</span>{" "}
-            where I can contribute to impactful products and continue growing as
-            an engineer.
+            I’m open to opportunities and collaboration where I can contribute
+            to impactful products and continue growing as an engineer.
           </motion.p>
         </motion.div>
       </div>
