@@ -148,11 +148,12 @@ export default function Experience() {
                       <div className="flex flex-col flex-1">
                         <div
                           className="
-                            flex flex-row justify-between items-start
-                            gap-4
+                            flex flex-col gap-1.5
+                            sm:flex-row sm:justify-between sm:items-start
+                            sm:gap-4
                           "
                         >
-                          <div className="max-w-[70%]">
+                          <div className="min-w-0 sm:max-w-[70%]">
                             <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
                               <p className="text-xs sm:text-sm text-(--color-foreground)">
                                 {role.title}
@@ -173,10 +174,10 @@ export default function Experience() {
                                 </span>
                               )}
                             </div>
-                            <p className="text-xs text-(--color-foreground)/70 mt-1 inline-flex items-center gap-1.5">
-                              <span>{role.location}</span>
+                            <p className="text-xs text-(--color-foreground)/70 mt-1">
+                              {role.location}
                               {role.workMode && (
-                                <span className="inline-flex items-center gap-1.5">
+                                <span className="ml-2 inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
                                   <span className="h-1 w-1 rounded-full shrink-0 bg-(--color-foreground)/50" />
                                   {role.workMode}
                                 </span>
@@ -188,7 +189,7 @@ export default function Experience() {
                               text-xs sm:text-sm
                               text-(--color-foreground)/70
                               whitespace-nowrap
-                              text-right
+                              sm:text-right
                             "
                           >
                             {role.period}
