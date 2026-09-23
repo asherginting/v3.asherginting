@@ -1,12 +1,27 @@
 [
   {
+    "company": "Tripbooka",
+    "url": "https://tripbooka.com",
+    "roles": [
+      {
+        "title": "Full Stack Engineer",
+        "type": "Part-time",
+        "period": "May 2026 — Present",
+        "location": "Newcastle upon Tyne, United Kingdom",
+        "workMode": "Remote"
+      }
+    ]
+  },
+  {
     "company": "Bank Sinarmas",
     "url": "https://www.banksinarmas.com/id/personal&lang=en",
     "roles": [
       {
-        "title": "Frontend Engineer",
+        "title": "Frontend Developer",
+        "type": "Full-time",
         "period": "Nov 2024 — Apr 2026",
-        "location": "Jakarta, Indonesia"
+        "location": "Jakarta, Indonesia",
+        "workMode": "On-site"
       }
     ]
   },
@@ -15,9 +30,70 @@
     "url": "https://xcidic.com",
     "roles": [
       {
-        "title": "Mobile & Web Engineer",
-        "period": "Jun 2023 — Nov 2024",
-        "location": "Singapore (Remote)"
+        "title": "Full Stack Engineer",
+        "type": "Full-time",
+        "period": "Nov 2023 — Nov 2024",
+        "location": "Singapore",
+        "workMode": "Remote"
+      }
+    ]
+  },
+  {
+    "company": "Dolan",
+    "url": "https://www.dolan.id",
+    "roles": [
+      {
+        "title": "Full Stack Engineer",
+        "type": "Part-time",
+        "period": "Feb 2023 — Nov 2024",
+        "location": "Jakarta, Indonesia",
+        "workMode": "Remote"
+      }
+    ]
+  },
+  {
+    "company": "Landack",
+    "url": "https://landack.id",
+    "roles": [
+      {
+        "title": "Mobile Application Developer",
+        "type": "Part-time",
+        "period": "Jan 2024 — Apr 2024",
+        "location": "Jakarta, Indonesia",
+        "workMode": "Remote"
+      }
+    ]
+  },
+  {
+    "company": "Platon",
+    "url": "https://platon.co.id",
+    "roles": [
+      {
+        "title": "Full Stack Engineer",
+        "type": "Full-time",
+        "period": "Oct 2023 — Dec 2023",
+        "location": "Yogyakarta, Indonesia",
+        "workMode": "Remote"
+      },
+      {
+        "title": "Full Stack Engineer",
+        "type": "Freelance",
+        "period": "Feb 2023 — Oct 2023",
+        "location": "Yogyakarta, Indonesia",
+        "workMode": "Remote"
+      }
+    ]
+  },
+  {
+    "company": "Dear Hope",
+    "url": "https://dearhope.id",
+    "roles": [
+      {
+        "title": "Mobile Application Developer",
+        "type": "Part-time",
+        "period": "Aug 2023 — Oct 2023",
+        "location": "Surabaya, Indonesia",
+        "workMode": "Remote"
       }
     ]
   },
@@ -27,13 +103,30 @@
     "roles": [
       {
         "title": "Junior Software Engineer",
-        "period": "Nov 2022 — Jun 2023",
-        "location": "Yogyakarta, Indonesia"
+        "type": "Full-time",
+        "period": "Jan 2023 — Aug 2023",
+        "location": "Yogyakarta, Indonesia",
+        "workMode": "On-site"
       },
       {
-        "title": "Software Engineer (Intern)",
-        "period": "Jun 2022 — Nov 2022",
-        "location": "Yogyakarta, Indonesia"
+        "title": "Software Engineer Intern",
+        "type": "Full-time",
+        "period": "Aug 2022 — Jan 2023",
+        "location": "Yogyakarta, Indonesia",
+        "workMode": "On-site"
+      }
+    ]
+  },
+  {
+    "company": "Hexa Daya Solusi",
+    "url": "http://hexadaya.id",
+    "roles": [
+      {
+        "title": "Full Stack Engineer Intern",
+        "type": "Full-time",
+        "period": "Jun 2022 — Jul 2022",
+        "location": "South Tangerang, Indonesia",
+        "workMode": "On-site"
       }
     ]
   }

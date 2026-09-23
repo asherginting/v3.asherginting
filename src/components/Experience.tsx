@@ -5,8 +5,10 @@ import experiences from "@/data/experience.json";
 
 type Role = {
   title: string;
+  type?: string;
   period: string;
   location: string;
+  workMode?: "Remote" | "On-site";
 };
 
 type Experience = {
@@ -123,35 +125,80 @@ export default function Experience() {
                   {exp.company}
                 </h3>
               )}
-              <div className="flex flex-col gap-5">
-                {exp.roles.map((role, i) => (
-                  <div
-                    key={i}
-                    className="
-                      flex flex-row justify-between items-start
-                      gap-4
-                    "
-                  >
-                    <div className="max-w-[70%]">
-                      <p className="text-xs sm:text-sm text-(--color-foreground)">
-                        {role.title}
-                      </p>
-                      <p className="text-xs text-(--color-foreground)/70 mt-1">
-                        {role.location}
-                      </p>
-                    </div>
+              <div className="flex flex-col">
+                {exp.roles.map((role, i) => {
+                  const isMulti = exp.roles.length > 1;
+                  const isLast = i === exp.roles.length - 1;
+                  return (
                     <div
+                      key={i}
                       className="
-                        text-xs sm:text-sm
-                        text-(--color-foreground)/70
-                        whitespace-nowrap
-                        text-right
+                        flex flex-row items-stretch
+                        gap-3
                       "
                     >
-                      {role.period}
+                      {isMulti && (
+                        <div className="flex flex-col items-center w-2 shrink-0">
+                          <span className="h-2 w-2 rounded-full bg-accent shrink-0 mt-1.5" />
+                          {!isLast && (
+                            <span className="w-px flex-1 bg-(--color-foreground)/20 mt-1" />
+                          )}
+                        </div>
+                      )}
+                      <div className="flex flex-col flex-1">
+                        <div
+                          className="
+                            flex flex-row justify-between items-start
+                            gap-4
+                          "
+                        >
+                          <div className="max-w-[70%]">
+                            <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                              <p className="text-xs sm:text-sm text-(--color-foreground)">
+                                {role.title}
+                              </p>
+                              {role.type && (
+                                <span
+                                  className="
+                                    text-[10px]
+                                    font-medium
+                                    text-(--color-foreground)/60
+                                    bg-(--color-foreground)/8
+                                    rounded-full
+                                    px-2 py-0.5
+                                    leading-none
+                                  "
+                                >
+                                  {role.type}
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs text-(--color-foreground)/70 mt-1 inline-flex items-center gap-1.5">
+                              <span>{role.location}</span>
+                              {role.workMode && (
+                                <span className="inline-flex items-center gap-1.5">
+                                  <span className="h-1 w-1 rounded-full shrink-0 bg-(--color-foreground)/50" />
+                                  {role.workMode}
+                                </span>
+                              )}
+                            </p>
+                          </div>
+                          <div
+                            className="
+                              text-xs sm:text-sm
+                              text-(--color-foreground)/70
+                              whitespace-nowrap
+                              text-right
+                            "
+                          >
+                            {role.period}
+                          </div>
+                        </div>
+                        {!isLast && <div className="h-5" />}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </motion.div>
           ))}
